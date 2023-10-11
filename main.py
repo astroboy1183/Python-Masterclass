@@ -5,13 +5,8 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print("Hi, {0}".format(name))  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print('This Project is a list of projects coded as part of udemy course by Angela Yu.\nCourse link: https://www.udemy.com/course/100-days-of-code/  ')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
