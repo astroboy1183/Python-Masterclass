@@ -8,6 +8,3 @@ num = int(input())
 each = (total_bill + ((tip_percentage / 100) * total_bill)) / num
 
 print("Each person should pay:\n ", round(each, 2))
-
-
-
