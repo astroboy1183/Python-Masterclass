@@ -9,23 +9,23 @@ if(first_step=="right"):
     exit()
 else:
     print("Great! Proceed ahead.")
+    print("Choose \"swim\" or \"wait\"")
+    second_step = input().lower()
+    if (second_step == "swim"):
+        print("Game Over.")
+        exit()
+    else:
+        print("Great! Proceed ahead.")
 
-print("Choose \"swim\" or \"wait\"")
-second_step = input().lower()
-if(second_step=="swim"):
-    print("Game Over.")
-    exit()
-else:
-    print("Great! Proceed ahead.")
+        print("Which door?")
 
-print("Which door?")
+        print("Choose \"Red\" , \"Blue \" or \"Yellow\"")
+        third_step = input().lower()
 
-print("Choose \"Red\" , \"Blue \" or \"Yellow\"")
-third_step = input().lower()
+        if (third_step == "yellow"):
+            print("You Win!")
+        else:
+            print("Game Over.")
+            exit()
 
-if(third_step=="yellow"):
-    print("You Win!")
-else:
-    print("Game Over.")
-    exit()
 
