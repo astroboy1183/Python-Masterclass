@@ -1,3 +1,5 @@
+#Rock Paper Scissors game.
+
 import random
 
 while(1):
