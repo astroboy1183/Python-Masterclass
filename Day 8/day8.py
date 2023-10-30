@@ -4,7 +4,7 @@ import string
 def encode_decode_string(inp, n):
     new = ''
     for char in inp:
-        if 97 <= ord(char) <= 122:
+        if 97 <= ord(char) <= 122:  ## encode/decode only lowercase and uppercase alphabets.
             new += (chr((ord(char) + n - 97) % 26 + 97))
         elif 65 <= ord(char) <= 90:
             new += (chr((ord(char) + n - 65) % 26 + 65))
