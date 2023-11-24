@@ -5,6 +5,7 @@ import random
 num_of_entries = len(data)
 score = 0
 
+
 def check(user_input, other_inp, score):
     if user_input > other_inp:
         print("You won")
@@ -21,7 +22,7 @@ while 1:
     print(data[chosen_number]['name'])
     first = data[chosen_number]['follower_count']
     first_name = data[chosen_number]['name']
-    chosen_number = random.randint(0, num_of_entries-1)
+    chosen_number = random.randint(0, num_of_entries - 1)
     print(data[chosen_number]['name'])
     second = data[chosen_number]['follower_count']
     second_name = data[chosen_number]['name']
