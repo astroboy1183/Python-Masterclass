@@ -6,31 +6,25 @@ from turtle import *
 
 import colorgram
 
-#
-# rgb_colors = []
-# colors = colorgram.extract('image.jpg', 30)
-# for color in colors:
-#     r = color.rgb.r
-#     g = color.rgb.g
-#     b = color.rgb.b
-#
-#     rgb_colors.append((r, g, b))
-#
-# print(rgb_colors)
-# print(len(rgb_colors))
-
-
-
 
 ######Hirst Painting Project##############
 
 
+rgb_colors = []
+colors = colorgram.extract('image.jpg', 30)
+for color in colors:
+    r = color.rgb.r
+    g = color.rgb.g
+    b = color.rgb.b
+
+    rgb_colors.append((r, g, b))
+
+# print(rgb_colors)
+# print(len(rgb_colors))
+
 
 def generate_color():
-    r = random.randint(0, 255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    return r, g, b
+    return random.choice(rgb_colors)
 
 list_of_colors = []
 tim = Turtle()
